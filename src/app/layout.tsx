@@ -14,21 +14,6 @@ const SEO = {
 export const metadata: Metadata = {
   title: SEO.title,
   description: SEO.description,
-  openGraph: {
-    type: "website",
-    locale: "es_EC",
-    url: SEO.image,
-    title: SEO.title,
-    description: SEO.description,
-    images: [
-      {
-        url: SEO.image,
-        width: 1200,
-        height: 630,
-        alt: SEO.title,
-      },
-    ],
-  },
 };
 
 export default function RootLayout({

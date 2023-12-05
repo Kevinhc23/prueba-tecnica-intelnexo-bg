@@ -5,7 +5,7 @@ import { Subtitle } from "../ui/tipography";
 const TextBlockSection = () => {
   return (
     <>
-      <section className="py-12 px-6 ">
+      <section className="py-12 px-6">
         <div className="py-12 space-y-8">
           <InfoTag className="">Si recibes dinero</InfoTag>
           <Subtitle className="text-black font-bold text-2xl">

@@ -69,27 +69,25 @@ export const Feature = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center py-4 gap-16">
         {feautures1.map((feauture) => {
           return (
-            <>
-              <div
-                className="flex flex-col justify-center space-y-4"
-                key={feauture.id}
+            <div
+              className="flex flex-col justify-center space-y-4"
+              key={feauture.id}
+            >
+              <span className="text-4xl">{feauture.icon}</span>
+              <HeadingTitle3 className="text-xl">
+                {feauture.title}
+              </HeadingTitle3>
+              <Paragraph className="text-lg text-neutral-500">
+                {feauture.description}
+              </Paragraph>
+              <Link
+                href={feauture.link}
+                className="text-md  text-blue-600 underline underline-offset-2"
               >
-                <span className="text-4xl">{feauture.icon}</span>
-                <HeadingTitle3 className="text-xl">
-                  {feauture.title}
-                </HeadingTitle3>
-                <Paragraph className="text-lg text-neutral-500">
-                  {feauture.description}
-                </Paragraph>
-                <Link
-                  href={feauture.link}
-                  className="text-md  text-blue-600 underline underline-offset-2"
-                >
-                  {feauture.linkText}
-                </Link>
-                <span className="border-b-[1px] border-neutral-300 py-4"></span>
-              </div>
-            </>
+                {feauture.linkText}
+              </Link>
+              <span className="border-b-[1px] border-neutral-300 py-4"></span>
+            </div>
           );
         })}
       </div>
@@ -115,7 +113,7 @@ export const Feature2 = () => {
                 <Paragraph className="text-lg text-neutral-500">
                   {feauture.description}
                 </Paragraph>
-                <span className="border-b-[1px] border-neutral-300 py-4"></span>
+                <hr className="text-neutral-300 py-4" />
               </div>
             </>
           );
