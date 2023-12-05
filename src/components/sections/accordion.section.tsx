@@ -7,7 +7,7 @@ import {
   RemesadorasSA,
 } from "@/lib/remesadoras.data";
 import LogoUSAGroup from "@/../public/LogoUsaGroup.png";
-import LogoEUGroup from "@/../public/LogoEuGroup.png";
+import LogoEUGroup from "@/../public/LogoEUGroup.png";
 import LogoSudamericaGroup from "@/../public/LogoSAGroup.png";
 
 export const AccordionUSA = () => {
