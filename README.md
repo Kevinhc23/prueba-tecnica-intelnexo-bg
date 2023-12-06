@@ -39,3 +39,7 @@ Para ejecutar el proyecto, se debe ejecutar el comando `npm run dev` y se abrir�
 ### Diseño en pantalla de móvil
 
 ![Landing Page Mobile](./public/diseño-mobile.png)
+
+### Prueba Lighthouse
+
+![Landing Page Lighthouse](./public/prueba-lighthouse.png)
