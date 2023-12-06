@@ -13,8 +13,8 @@ import LogoSudamericaGroup from "@/../public/LogoSAGroup.png";
 export const AccordionUSA = () => {
   return (
     <>
-      <section className="px-6 gap-12">
-        <Subtitle className="text-2xl py-16">
+      <section className="px-6 gap-12 md:container md:max-w-6xl md:mx-auto md:px-0">
+        <Subtitle className="text-2xl py-16 md:text-4xl">
           Dile a tus familiares que te envíen tus Giros a través de estas
           Remesadoras
         </Subtitle>
@@ -62,7 +62,7 @@ export const AccordionUSA = () => {
 export const AccordionEU = () => {
   return (
     <>
-      <section className="px-6 gap-12">
+      <section className="px-6 gap-12 md:container md:max-w-6xl md:mx-auto md:px-0">
         <hr className="text-neutral-300 py-2" />
         <details className="group">
           <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
@@ -107,7 +107,7 @@ export const AccordionEU = () => {
 export const AccordionSudamerica = () => {
   return (
     <>
-      <section className="px-6 gap-12">
+      <section className="px-6 gap-12 md:container md:max-w-6xl md:mx-auto md:px-0">
         <hr className="text-neutral-300 py-2" />
         <details className="group">
           <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
@@ -116,33 +116,35 @@ export const AccordionSudamerica = () => {
               <ArrowDownIcon />
             </span>
           </summary>
-          {
-            <div className="grid grid-cols-2 items-center justify-center py-4 text-neutral-500 transition-opacity duration-300 ease-in-out opacity-0 group-open:opacity-100">
-              {RemesadorasSA.map((remesadora) => {
-                return (
-                  <>
-                    <dl
-                      className="flex flex-col justify-center space-y-2"
-                      key={remesadora.id}
-                    >
-                      <dd className="text-lg text-neutral-800 font-light hover:text-neutral-500">
-                        {remesadora.name}
-                      </dd>
-                    </dl>
-                  </>
-                );
-              })}
-            </div>
-          }
-          <picture className="flex justify-center items-center py-8">
-            <Image
-              src={LogoSudamericaGroup}
-              alt="Logo de Remesadoras"
-              width={246}
-              height={70}
-              className="object-cover ratio-16:9"
-            />
-          </picture>
+          <div className="flex flex-col md:flex-row md:justify-between">
+            {
+              <div className="grid grid-cols-2 items-center justify-center py-4 text-neutral-500 transition-opacity duration-300 ease-in-out opacity-0 group-open:opacity-100 w-1/2">
+                {RemesadorasSA.map((remesadora) => {
+                  return (
+                    <>
+                      <dl
+                        className="flex flex-col justify-center space-y-2"
+                        key={remesadora.id}
+                      >
+                        <dd className="text-lg text-neutral-800 font-light hover:text-neutral-500">
+                          {remesadora.name}
+                        </dd>
+                      </dl>
+                    </>
+                  );
+                })}
+              </div>
+            }
+            <picture className="flex justify-center items-center py-8 w-1/2">
+              <Image
+                src={LogoSudamericaGroup}
+                alt="Logo de Remesadoras"
+                width={246}
+                height={70}
+                className="object-cover ratio-16:9 md:w-[460px] md:h-[360px] md:object-contain"
+              />
+            </picture>
+          </div>
         </details>
       </section>
     </>

@@ -5,9 +5,9 @@ import { Subtitle } from "../ui/tipography";
 export const Card = () => {
   return (
     <>
-      <section className="p-4 ">
-        <div className="px-8 py-12 bg-[#d2006e] rounded-2xl flex justify-center flex-col items-center gap-8 ">
-          <Subtitle className="text-white font-bold text-2xl text-center">
+      <section className="p-4 bg-white ">
+        <div className="px-8 py-12 bg-[#d2006e] rounded-2xl flex justify-center flex-col items-center gap-8 md:max-w-6xl md:container md:mx-auto">
+          <Subtitle className="text-white font-bold text-2xl text-center md:text-4xl">
             Envia hasta $9.000 por transacción o acumulado en el mes.
           </Subtitle>
           <Link
@@ -25,8 +25,8 @@ export const Card = () => {
 export const Card2 = () => {
   return (
     <>
-      <section className="p-6 ">
-        <div className="px-8 py-12  bg-[#160f41] rounded-2xl flex justify-center flex-col items-center gap-8 ">
+      <section className="p-6 bg-white">
+        <div className="px-8 py-12  bg-[#160f41] rounded-2xl flex justify-center flex-col items-center gap-8 md:max-w-6xl md:container md:mx-auto">
           <Subtitle className="text-white font-bold text-2xl text-center">
             Te ayudamos a resolver todas tu dudas
           </Subtitle>

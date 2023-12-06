@@ -5,8 +5,8 @@ import { ArrowDownIcon } from "@/lib/icons";
 export const Requirements = () => {
   return (
     <>
-      <section className="py-12 px-6">
-        <div className="py-12 space-y-4">
+      <section className="py-12 px-6 bg-white">
+        <div className="py-12 space-y-4 md:max-w-6xl md:container md:mx-auto">
           <InfoTag className="">Requisitos</InfoTag>
           <Subtitle className="text-black font-bold text-2xl">
             Requisitos para enviar y recibir tus Giros

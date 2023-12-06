@@ -23,9 +23,7 @@ export const Paragraph = ({ children, className }: childrenProps) => {
 export const Subtitle = ({ children, className }: childrenProps) => {
   return (
     <>
-      <h2
-        className={`font-bold leading-10 lg:leading-[52.80px] lg:text-[44px] ${className}`}
-      >
+      <h2 className={`font-bold leading-10 lg:leading-[52.80px] ${className}`}>
         {children}
       </h2>
     </>
@@ -35,9 +33,7 @@ export const Subtitle = ({ children, className }: childrenProps) => {
 export const HeadingTitle3 = ({ children, className }: childrenProps) => {
   return (
     <>
-      <h3
-        className={`font-bold leading-10 lg:leading-[52.80px] lg:text-[44px] ${className}`}
-      >
+      <h3 className={`font-bold leading-10 lg:leading-[52.80px] ${className}`}>
         {children}
       </h3>
     </>

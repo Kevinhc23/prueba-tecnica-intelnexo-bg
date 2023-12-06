@@ -74,10 +74,10 @@ export const Feature = () => {
               key={feauture.id}
             >
               <span className="text-4xl">{feauture.icon}</span>
-              <HeadingTitle3 className="text-xl">
+              <HeadingTitle3 className="text-xl md:text-2xl">
                 {feauture.title}
               </HeadingTitle3>
-              <Paragraph className="text-lg text-neutral-500">
+              <Paragraph className="text-lg text-neutral-500 [text-wrap:balance;]">
                 {feauture.description}
               </Paragraph>
               <Link
@@ -86,7 +86,7 @@ export const Feature = () => {
               >
                 {feauture.linkText}
               </Link>
-              <span className="border-b-[1px] border-neutral-300 py-4"></span>
+              <hr className="text-neutral-300 pt-4 md:hidden" />
             </div>
           );
         })}
@@ -113,7 +113,7 @@ export const Feature2 = () => {
                 <Paragraph className="text-lg text-neutral-500">
                   {feauture.description}
                 </Paragraph>
-                <hr className="text-neutral-300 py-4" />
+                <hr className="text-neutral-300 pt-4 md:hidden" />
               </div>
             </>
           );
