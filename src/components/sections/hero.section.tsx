@@ -3,18 +3,19 @@ import HeaderImage from "@/../public/Hero-Image.jpg";
 import { Paragraph, Title } from "../ui/tipography";
 import { ButtonLink, ButtonLinkSecondary } from "../ui/button.ui";
 import { ArrowRight } from "@/lib/icons";
+import MobileImage from "@/../public/mobile-header-bg.jpg";
 
 export const Hero = () => {
   return (
     <>
       <Image
-        src={HeaderImage}
+        src={MobileImage}
         alt="Hero Image"
         className=" object-cover -object-top w-screen h-[99px] aspect-auto md:hidden"
         priority
       />
       <section className="flex justify-center items-center">
-        <article className="md:w-1/2 md:container md:max-w-lg md:mx-auto space-y-4 py-12 px-6">
+        <article className="md:w-1/2 md:container md:max-w-md md:mx-auto space-y-4 py-12 px-6">
           <span className="text-white uppercase">remesas</span>
           <Title className="text-white text-3xl md:text-7xl">
             <span className="text-[#ed99c5]">

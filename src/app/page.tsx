@@ -1,6 +1,6 @@
 import {
   AccordionEU,
-  AccordionSudamerica,
+  AccordionSA,
   AccordionUSA,
 } from "@/components/sections/accordion.section";
 import { Card, Card2 } from "@/components/sections/card.section";
@@ -16,10 +16,10 @@ const page = () => {
         <Hero />
         <TextBlockSection />
         <Card />
-        <div className=" bg-white pb-16">
+        <div className=" bg-white py-16 space-y-12">
           <AccordionUSA />
           <AccordionEU />
-          <AccordionSudamerica />
+          <AccordionSA />
         </div>
         <ReviewSection />
         <Requirements />
